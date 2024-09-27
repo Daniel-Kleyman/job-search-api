@@ -51,7 +51,8 @@ public class WriteToExcel {
                 linkCell.setHyperlink(hyperlink);
                 linkCell.setCellValue(url);
                 row.createCell(7).setCellValue(details.get(1)); // Description
-                row.createCell(8).setCellValue(" ");
+                row.createCell(8).setCellValue(details.get(4)); // ai score
+                row.createCell(9).setCellValue(" ");
             } else {
                 System.err.println("Insufficient data for URL: " + url);
             }
